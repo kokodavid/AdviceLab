@@ -1,0 +1,197 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="result"
+            type="com.koko.advice.models.Result" />
+    </data>
+    <FrameLayout
+        tools:viewBindingIgnore="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.MainActivity"
+        android:background="#f4e9dc"
+        android:id="@+id/root_container">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/adviceWord"
+                android:layout_below="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="@color/DarkLine"
+                android:hint="No Internet Connection"
+                />
+
+
+
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="260dp"
+                android:layout_height="260dp"
+                android:layout_marginTop="-40dp"
+                app:srcCompat="@drawable/circle"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="-90dp"/>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="225dp"
+                android:layout_marginTop="80dp"
+                app:srcCompat="@drawable/circle_edge" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="160dp"
+                android:layout_marginTop="210dp"
+                app:srcCompat="@drawable/circle_edge" />
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="-56dp"
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/circle_without_solid" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="250dp"
+                android:layout_alignParentRight="true"
+                android:layout_height="220dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@drawable/circle_color_kp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Advice Lab"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/DarkLine"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"/>
+
+
+            <View
+                android:id="@+id/SplitLine_hor1"
+                android:layout_width="match_parent"
+                android:layout_height= "3dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/DarkLine" />
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height= "3dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="60dp"
+                android:background="@color/DarkLine" />
+
+            <View
+                android:id="@+id/line3"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height= "3dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="60dp"
+                android:background="@color/DarkLine" />
+
+            <TextView
+                android:layout_below="@+id/line3"
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Advice...."
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/DarkLine"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"/>
+
+
+            <ImageView
+                android:id="@+id/belowImage"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="-40dp"
+                app:srcCompat="@drawable/circle"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="-100dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="-70dp"
+                android:layout_marginRight="-90dp"/>
+
+            <ImageView
+                android:id="@+id/belowImage2"
+                android:layout_width="150dp"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="-0dp"
+                android:layout_alignParentBottom="true"
+                android:layout_height="150dp"
+                android:layout_marginTop="65dp"
+                android:layout_marginBottom="-70dp"
+                android:layout_marginRight="50dp"
+                app:srcCompat="@drawable/circle_color_kp" />
+
+            <ImageView
+                android:layout_width="78dp"
+                android:layout_height="97dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="-50dp"
+                android:layout_marginBottom="78dp"
+                android:layout_marginRight="-56dp"
+                app:srcCompat="@drawable/circle_without_solid" />
+
+            <ImageView
+                android:layout_marginRight="20dp"
+                android:id="@+id/nextAdvice"
+                android:layout_width="70dp"
+                android:layout_below="@+id/adviceWord"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                app:srcCompat="@drawable/ic_baseline_refresh_24" />
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/next_advice"
+                android:layout_below="@+id/nextAdvice"
+                />
+
+        </RelativeLayout>
+
+
+
+
+    </FrameLayout>
+
+</layout>
